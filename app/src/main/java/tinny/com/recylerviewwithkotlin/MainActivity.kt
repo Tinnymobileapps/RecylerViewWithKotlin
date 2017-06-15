@@ -14,7 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var recylcer: RecyclerView = findViewById(R.id.rcv) as RecyclerView;
+
+//        for grid view
         recylcer.layoutManager = GridLayoutManager(this,3)
+//        for listview
+//        recylcer.layoutManager = LinearLayoutManager(this)
+
         recylcer.addItemDecoration(SpacesItemDecoration(3,50,true))
         recylcer.adapter = AppsAdapter(LoadApps.lofAppsInstance.loadApps(this))
     }
