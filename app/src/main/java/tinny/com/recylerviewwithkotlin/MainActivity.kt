@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var recylcer: RecyclerView = findViewById(R.id.rcv) as RecyclerView;
 
+
 //        for grid view
         recylcer.layoutManager = GridLayoutManager(this,3)
 //        for listview
